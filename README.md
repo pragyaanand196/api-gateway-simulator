@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+## ⚙️ Local Setup
 
-# Run and deploy your AI Studio app
+### 1. Clone Repository
+git clone https://github.com/pragyaanand196/api-gateway-simulator.git
 
-This contains everything you need to run your app locally.
+cd api-gateway-simulator
 
-View your app in AI Studio: https://ai.studio/apps/e4591a7b-afe1-4c4f-b2ca-448e3d8af17f
+### 2. Create Virtual Environment
+python -m venv venv
 
-## Run Locally
+### 3. Activate Environment
 
-**Prerequisites:**  Node.js
+Windows:
+.\venv\Scripts\activate
 
+Mac/Linux:
+source venv/bin/activate
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 4. Install Dependencies
+pip install -r requirements.txt
+
+### 5. Run Backend
+uvicorn app.main:app --reload
+
+### 6. Open API Docs
+http://127.0.0.1:8000/docs
