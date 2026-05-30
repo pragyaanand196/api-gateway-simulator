@@ -1,0 +1,6 @@
+{
+  "name": "API Gateway Simulator",
+  "description": "An interactive API Gateway Simulator showcasing microservice routing, evaluation, decisioning, and logging flows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
